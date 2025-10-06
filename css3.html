@@ -1,0 +1,156 @@
+<html>
+    <head>
+     <title>Medical healthcare website our services</title>
+
+     <script>
+        MyBanners=new Array('service5.png','service1.png','service2.png','service3.png','service4.png')
+        banner=0
+        function ShowBanners()
+        { if (document.images)
+        { banner++
+        if (banner==MyBanners.length) {
+        banner=0}
+        document.ChangeBanner.src=MyBanners[banner]
+        setTimeout("ShowBanners()",1000)
+        }
+        }
+
+       function move_in(img_name,img_src)
+       {
+        document[img_name].src=img_src;
+       }
+
+       function move_out(img_name,img_src)
+       {
+        document[img_name].src=img_src;
+       }
+
+       function move_in1(img_name1,img_src1)
+       {
+        document[img_name1].src=img_src1;
+       }
+
+       function move_out1(img_name1,img_src1)
+       {
+        document[img_name1].src=img_src1;
+       }
+
+       function move_in2(img_name2,img_src2)
+       {
+        document[img_name2].src=img_src2;
+       }
+
+       function move_out2(img_name2,img_src2)
+       {
+        document[img_name2].src=img_src2;
+       }
+
+       function move_in3(img_name3,img_src3)
+       {
+        document[img_name3].src=img_src3;
+       }
+
+       function move_out3(img_name3,img_src3)
+       {
+        document[img_name3].src=img_src3;
+       }
+
+       function move_in4(img_name4,img_src4)
+       {
+        document[img_name4].src=img_src4;
+       }
+
+       function move_out4(img_name4,img_src4)
+       {
+        document[img_name4].src=img_src4;
+       }
+
+       function move_in5(img_name5,img_src5)
+       {
+        document[img_name5].src=img_src5;
+       }
+
+       function move_out5(img_name5,img_src5)
+       {
+        document[img_name5].src=img_src5;
+       }
+
+       function move_in6(img_name6,img_src6)
+       {
+        document[img_name6].src=img_src6;
+       }
+
+       function move_out6(img_name6,img_src6)
+       {
+        document[img_name6].src=img_src6;
+       }
+
+       function rover(Element4)
+            {
+               Element4.style.color="white"
+               Element4.style.backgroundColor="darkblue"
+            }
+    function rout(Element5)
+            {
+                Element5.style.color="white"
+                Element5.style.backgroundColor="blue"
+
+            }
+     </script>
+    </head>
+
+
+    <body body onload="ShowBanners()">
+        <div style="background-color:white; width:1520px;height:50px;float:left; color:white;font-size:30px;padding:10px;">
+
+            <div style="padding:0px 13px">
+            <img src="logo1.png" style="float:left;" width="200" height="40";>
+            <font size=4>
+                <p style="float: left; width:70%; ">
+                  
+                    <a href="css1.html"style="text-decoration:none;margin-left:100px; color:rgb(1, 1, 1);font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'" >Home</a>
+                    <a href="css2.html"style="text-decoration:none;margin-left:30px;color:black;font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Find a Doctor
+                    <a href="css3.html"style="text-decoration:none;margin-left:30px;color:black;font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Our Services</a>
+                    <a href="css4.html"style="text-decoration:none;margin-left:30px;color:black;font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Testiminols</a>
+                  
+                    <a href="form1.html"><input type="button" value="Appointment"  onmouseover="rover(this)" onmouseout="rout(this)"  style="background-color: rgba(0, 94, 255, 0.914);color:white;font-size:16px;border-radius:5px;height:30px;width:150px;margin-left:300px;border:none;"></a>
+                </p>
+            </font>
+             </div>
+             </div>
+        </div>
+
+        <div style="padding-top: 20px;">
+            <center>
+                <img src="service1.png" width="1250" height="500" name="ChangeBanner"/>
+                </center>
+        </div>
+
+        <div class=m style="width:100%; height:100%;">
+            <div style="color:rgb(4, 4, 97);padding-top:100px;font-size:3rem;margin-left:500px"><strong> Our Services</strong></div> 
+               <p style="color:rgb(20, 19, 19);margin-left:450px;font-size:1.1rem;"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+            <div style="margin-left: 50px;">
+                <center>
+
+                    <div style="float:left;width:30%;padding:5px">  <a href="" OnMouseOver="move_in('image1','eyecare2.png')"  OnMouseOut="move_out('image1','eyecare.png')" height="250" width="300"  style="padding:4px;" ><img src="eyecare.png" name="image1" style="height:250px;width:300px"></a><h3>Eye Care</h3>
+                    </div>
+                    <div style="float:left;width:30%;padding:5px">  <a href="" OnMouseOver="move_in1('image2','dentalcare2.png')"  OnMouseOut="move_out1('image2','dentalcare.png')" height="250" width="300"  style="padding:4px;" > <img src="dentalcare.png" name="image2" style="height:250px;width:300px"></a><h3>Dental Care</h3>
+                    </div>
+                    <div style="float:left;width:30%;padding:5px">  <a href="" OnMouseOver="move_in2('image3','sergical1.png')"  OnMouseOut="move_out2('image3','sergical.png')" height="250" width="300"  style="padding:4px;" > <img src="sergical.png" name="image3" style="height:250px;width:300px"></a><h3>Sergical</h3>
+                    </div>
+        
+                    <div style="float:left;width:30%;padding:5px">  <a href="" OnMouseOver="move_in3('image4','skincare2.png')"  OnMouseOut="move_out3('image4','skincare.png')" height="250" width="300"  style="padding:4px;"> <img src="skincare.png" name="image4" style="height:250px;width:300px"></a><h3>Skin Care</h3>
+                    </div>
+                    <div style="float:left;width:30%;padding:5px">  <a href="" OnMouseOver="move_in4('image5','gynecology2.png')"  OnMouseOut="move_out4('image5','gynecology.png')" height="250" width="300"  style="padding:4px;"> <img src="gynecology.png" name="image5" style="height:250px;width:300px"></a><h3>Gynecology Services</h3>
+                    </div>
+                    <div style="float:left;width:30%;padding:5px">  <a href="" OnMouseOver="move_in5('image6','orthopedic2.png')"  OnMouseOut="move_out5('image6','orthopedic.png')" height="250" width="300"  style="padding:4px;"> <img src="orthopedic.png" name="image6" style="height:250px;width:300px"></a><h3>Orthopedic Care</h3>
+                    </div>
+                </center>   
+            </div>
+            </div>
+    
+
+    </body>
+</html>

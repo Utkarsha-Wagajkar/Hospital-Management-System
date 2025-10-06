@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contents="width=device-width,initial-scale=1.0">
+        <title>Appointment form</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+           
+
+            function formsubmit()
+            {
+                var errormessage="";
+                if(document.getElementById('name').value=="")
+                {
+                    errormessage+="enter your name\n";
+                    document.getElementById('name').style.borderColor="red";
+                }
+                else if(document.getElementById('mobile').value=="")
+                {
+                    errormessage+="enter your contact No\n";
+                    document.getElementById('mobile').style.borderColor="red";
+                }
+                else if(document.getElementById('email').value=="")
+                {
+                    errormessage+="enter your email address\n";
+                    document.getElementById('email').style.borderColor="red";
+                }
+                else if(document.getElementById('docspe').value=="")
+                {
+                    errormessage+="enter your speciality \n";
+                    document.getElementById('docspe').style.borderColor="red";
+                }
+                else if(document.getElementById('add').value=="")
+                {
+                    errormessage+="enter your address\n";
+                    document.getElementById('add').style.borderColor="red";
+                }
+                else if(errormessage!="")
+                {
+                    alert(errormessage);
+                    return false;
+                }
+                else
+                {
+                    var n=document.getElementById("name").value;
+                    alert(n+"  your appointment request is accepted!!");
+                }
+
+            }
+            function focus1(f)
+            {
+                f.style.backgroundColor="rgb(231, 136, 156)"
+            }
+            function backward()
+            {
+                window.history.back();
+            }
+
+            function mover(e)
+            {
+               e.style.color="white"
+               e.style.backgroundColor="#051b14"
+            }
+            function mout(e1)
+            {
+                e1.style.color="black"
+                e1.style.backgroundColor="#088f62"
+
+            }
+            function press(k)
+            {
+                var d=document.getElementById("docspe");
+                d.value=d.value.toUpperCase();
+                
+            }
+
+            function createcookie()
+            {
+                var value=email.value;
+                document.cookie="name="+value;
+                alert("cookie is created");
+            }
+
+        </script>
+    
+    </head>
+    <body>
+        <div class="abc">
+            <section class="container">
+                <header>Book Appointement</header>
+                <form class="form" onsubmit="formsubmit()">
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <input requireds="" type="text" id="name" placeholder="Enter full name" onfocus="focus1(this)">
+                    </div>
+    
+                    <div class="column1">
+                        <div class="input-box">
+                            <label>Phone Number</label>
+                            <input requireds="" type="text" id="mobile" maxlength="10" placeholder="Enter phone Number"> 
+                            
+                        </div>
+    
+                        <div class="input-box">
+                            <label> Date</label>
+                            <input requireds="" type="date" placeholder="Enter birth date"> 
+                        </div>
+                    </div>
+
+                    
+                    <div class="column2">
+                        <div class="input-box">
+                            <label>Email Id</label>
+                            <input requireds="" type="email" id="email" placeholder="Enter Emai id"> 
+                           
+                        </div>
+    
+                        <div class="input-box">
+                            <label>Speciality</label>
+                            <input requireds="" type="text" id="docspe" placeholder="Enter speciality" onkeypress="press(this)"> 
+                        </div>
+                    </div>
+
+
+                
+    
+                    <div class="input-box address">
+    
+    
+                        <label>Address </label>
+                        <input required="" placeholder="Enter street address" id="add" type="text">
+    
+                        <div class="column">
+    
+                            <div class="select-box" id="doctor">
+                                <select>
+                                    <option hidden="">Doctor</option>
+                                    <option>Dr Y K Mishra</option>
+                                    <option>Dr Sandeep Vaishya </option>
+                                    <option>Dr Prithvi Mohandas</option>
+                                    <option>Dr Monika Sharma</option>  
+                                    <option>Dr Prithika Chary</option>
+                                    <option>Dr Sharad Ayurveda</option>                     
+                                </select>
+                            </div>
+    
+    
+                            <input required="" placeholder="Enter your city" type="text">
+                        </div>
+                    </div>
+                    <input type="submit" value="Book Appointement" id="button1" onmouseover="mover(this)" onmouseout="mout(this)">
+                    <a href="css1.html"><input type="button" value="Back" id="button2" onclick="backward()" onmouseover="mover(this)" onmouseout="mout(this)"></a>
+                    <input type="button" value="save" id="button3" onmouseover="mover(this)" onmouseout="mout(this)"  onclick="createcookie()">
+    
+    
+                </form>
+            </section>
+        </div>
+
+
+    
+    </body>
+</html>

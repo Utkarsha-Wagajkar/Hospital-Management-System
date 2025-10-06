@@ -1,0 +1,153 @@
+<html>
+    <head>
+     <title>Medical healthcare website </title>
+
+     <script>
+         function rover(Element4)
+            {
+               Element4.style.color="white"
+               Element4.style.backgroundColor="darkblue"
+            }
+    function rout(Element5)
+            {
+                Element5.style.color="white"
+                Element5.style.backgroundColor="blue"
+
+            }
+
+     function mover(e)
+            {
+               e.style.color="white"
+               e.style.backgroundColor="blue"
+            }
+     function mout(e1)
+            {
+                e1.style.color="black"
+                e1.style.backgroundColor="orange"
+
+            }
+
+     function checkforblanks()
+     {
+        var errormessage="";
+        if(document.getElementById('fname').value=="")
+        {
+            errormessage+="enter your name\n";
+            document.getElementById('fname').style.borderColor="red";
+        }
+        else if(document.getElementById('email').value=="")
+        {
+            errormessage+="enter your email\n";
+            document.getElementById('email').style.borderColor="red";
+        }
+        else if(document.getElementById('msg').value=="")
+        {
+            errormessage+="enter your feedback\n";
+            document.getElementById('msg').style.borderColor="red";
+        }
+        else if(errormessage!="")
+        {
+            alert(errormessage);
+            return false;
+        }
+        else
+        {
+            alert("Feedback submitted!!");
+        }
+     }
+
+     function kdown(ku)
+            {
+                ku.style.background="pink"
+            }
+     function keyup()
+            {
+                var d=document.getElementById("msg");
+                d.value=d.value.toUpperCase();
+                
+            }
+      function focus1(f)
+            {
+                f.style.backgroundColor="rgb(231, 136, 156)"
+            }
+     </script>
+
+
+<style>
+    #b1{
+        height:30px;
+        width:80px;
+        background-color: orange;
+        border:none
+    }
+</style>
+     
+    </head>
+    
+    <body style="background-color:  #cbe4ff">
+        <div style="background-color:white; width:1520px;height:50px;float:left; color:white;font-size:30px;padding:10px;">
+
+            <div style="padding:0px 13px">
+            <img src="logo1.png" style="float:left;" width="200" height="40";>
+            <font size=4>
+                <p style="float: left; width:70%; ">
+                  
+                    <a href="css1.html"style="text-decoration:none;margin-left:100px; color:rgb(1, 1, 1);font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Home</a>
+                    <a href="css2.html"style="text-decoration:none;margin-left:30px;color:black;font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Find a Doctor
+                    <a href="css3.html"style="text-decoration:none;margin-left:30px;color:black;font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Our Services</a>
+                    <a href="css4.html"style="text-decoration:none;margin-left:30px;color:black;font-size: 1.3rem;"onmouseover="style.color='darkblue'" onmouseout="style.color='black'">Testiminols</a>
+                  
+                   <a href="form1.html"> <input type="button" value="Appointment"  onmouseover="rover(this)" onmouseout="rout(this)" style="background-color: rgba(0, 94, 255, 0.914);color:white;font-size:16px;border-radius:5px;height:30px;width:150px;margin-left:300px;border:none"></a>
+                </p>
+            </font>
+             </div>
+        </div>
+
+        <div class=m style="width:100%; height:100%;">
+            <div style="color:rgb(4, 4, 97);padding-top:150px;font-size:3rem;margin-left:300px"><strong>Our Patients FeedBack About Us</strong></div> 
+               <p style="color:#0c0404;margin-left:450px;font-size:1.1rem;"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+               <div style="float:left;width:45%;padding:20px">
+                <img src="t2.png" alt="utkarsha" width="100%" style="border-radius:20px;padding:30px;">
+                </div>
+
+                <div style="float:left;width:45%;padding-top: 70px;margin:40px">
+                    <br>
+                    <img src="t1.jpg" alt="utkarsha" width="30%"><br>
+                    <font color="black" size="4" style="margin-top:10px"> am very pleased as always.
+                        I will surly recommend<br>Lorem ipsum dolor sit amet your services to my friends.<br> consectetur adipisicing elit.thank you!!
+                       <br><br></font>
+                       <font color="black" size="4"> Radhika Singh<br></font>
+                    </p>
+                    </div>
+                    </div>
+                
+
+                    <div style="padding-top: 50px;padding-left: 680px;">
+                    <form id="frm2" name="fb" action="" onsubmit="checkforblanks()">
+                        <h1 style="padding-right: 200px;">Give Your Feedback</h1>
+                            Name<br>
+                            <input type="text" name="t1" id="fname" size="50"><br><br>
+                            Email address
+                            <br><input type="email" name="e1" id="email" size="50" onfocus="focus1(this)" ><br><br>
+                            Contact Number<br>
+                            <input type="text" size="50" maxlength="10"><br><br>
+                            Feedback<br>
+                            <textarea cols="50" rows="4" name="info" id="msg" onkeyup="keyup()" onkeydown="kdown(this)"></textarea>
+                            <br><br>
+                            <input type="submit" value="submit" id="b1" onclick="onclick1()" onmouseover="mover(this)" onmouseout="mout(this)" ><br><br>
+                     </form>
+                     </div>
+        
+            
+              
+
+              
+
+
+
+
+
+    </body>
+</html>
